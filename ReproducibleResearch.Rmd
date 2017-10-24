@@ -1,0 +1,202 @@
+---
+title: "Reproducible Research"
+subtitle: "Some Approaches in R programming"
+author: "Raju Rimal"
+output:
+  xaringan::moon_reader:
+    self_contained: false
+    css: ['default', "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css", 'custom.css']
+    lib_dir: libs
+    nature:
+      ratio: 4:3
+      countIncrementalSlides: no
+      highlightLines: yes
+      highlightStyle: github
+---
+
+class: middle, center
+
+.flex-container[
+  .half[
+    # How one can sing a song exactly same after many years
+  ].half[
+    ![The Beatles](http://www.powerofpop.com/wp-content/uploads/2015/12/Beatles001.jpg)
+  ]
+]
+
+---
+
+class: middle, center
+
+.flex-container[
+  .half[
+    ![The Beatles](https://s3.amazonaws.com/media.sheetmusicdirect.com/images/web/smd_117713_the_beatles_yesterday_web.png)
+  ].half[
+    # They have documented all the details of the song
+  ]
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# Can you reproduce your research after five years from now?
+]
+
+---
+
+class: middle, center
+
+
+# Steps to follow for reproducible Research
+
+.process-steps[
+## Make data and code availiable
+## Make documentation
+## So, other people reproduce your work
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# SAME DATA + SAME CODE 
+# = 
+# SAME OUTPUT
+]
+
+---
+
+class: middle, center
+
+# Approaches and tools for R programming
+
+.flex-container[
+.half[
+![](http://rgaiacs.com/images/2017-09-11-rum-presentation-alice-and-bob-r.svg)
+].half[
+![](https://www.rstudio.com/wp-content/uploads/2015/01/Untitled.001.jpeg)
+].half[
+![](http://www.escrowlondon.co.uk/wp-content/uploads/supported-platforms-600x400.jpg)
+]
+].flex-container[
+.half[
+![](https://www.exactabacus.com/uploads/2014/11/versioncontrol-logos.jpg)
+].half[
+![](http://bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg)
+]
+]
+
+---
+class: inverse, middle, center
+
+# Dynamic Document
+
+---
+class: middle
+
+.left-column[
+## Literate Programming
+### Knitr, Rmarkdown
+.flex-container[
+  .half[
+    ![](https://www.rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
+  ].half[
+    ![](https://www.rstudio.com/wp-content/uploads/2014/04/knitr-200x232.png)
+  ]
+]
+].right-column[
+```{r, echo = FALSE, out.width = "50%"}
+knitr::include_graphics("conversion.png")
+```
+
+## Some Extensions
+.flex-container[
+.half-top[
+### Presentations .small[([revealjs](https://mathatistics.github.io/nsm-17/#/title), [remarkjs](https://therimalaya.github.io/stat210-repetition/Day1#1))]
+].half-top[
+### Articles .small[([rticles](https://github.com/rstudio/rticles))]
+].half-top[
+### Books .small[([bookdown](http://stat210.netlify.com))]
+].half-top[
+### Websites .small[([blogdown](http://mathatistics.com))]
+]
+]
+]
+
+---
+class: middle
+
+.left-column[
+## Shiny
+.flex-container[
+![](https://www.rstudio.com/wp-content/uploads/2014/04/shiny.png)
+]
+].right-column[
+![](shiny-showcase.png)
+.flex-container[
+.left[
+> ### Dynamic Application
+
+> ### Dashboard
+]
+]
+]
+
+---
+class: inverse, middle, center
+
+# Version Control
+
+---
+class: middle
+
+.left-column[
+## Git
+### Github
+### Bitbucket
+![](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+.flex-container[
+.half[
+![](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)
+].half[
+![](https://discoverequip.com/wp-content/uploads/2016/12/bitbucket_bug_blue-01.png)
+]
+]
+].right-column[
+```{r, echo = FALSE, out.width = "75%"}
+knitr::include_graphics("https://www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/04-remote-repositories/01-introduction/basic-remote-workflow.png")
+```
+
+.code[.right[.small[source: https://www.git-tower.com]]]
+
+.left[
+.tidy[
+- Solution to mess of copies of same document
+- Working in a team (collaboration)
+- Better organization
+]
+]
+]
+
+---
+
+# Workflow
+
+![](DataScienceWorkflow.png)
+
+.tidy[
+- Version control comes in every steps
+- Document and track all the steps you follow
+- Pipeline the workflow from raw data to final product
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# Thank You
+]

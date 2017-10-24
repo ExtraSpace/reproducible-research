@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reproducible Research</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Raju Rimal" />
+    <link href="libs/remark-css-0.0.1/example.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Reproducible Research
+## Some Approaches in R programming
+### Raju Rimal
+
+---
+
+
+class: middle, center
+
+.flex-container[
+  .half[
+    # How one can sing a song exactly same after many years
+  ].half[
+    ![The Beatles](http://www.powerofpop.com/wp-content/uploads/2015/12/Beatles001.jpg)
+  ]
+]
+
+---
+
+class: middle, center
+
+.flex-container[
+  .half[
+    ![The Beatles](https://s3.amazonaws.com/media.sheetmusicdirect.com/images/web/smd_117713_the_beatles_yesterday_web.png)
+  ].half[
+    # They have documented all the details of the song
+  ]
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# Can you reproduce your research after five years from now?
+]
+
+---
+
+class: middle, center
+
+
+# Steps to follow for reproducible Research
+
+.process-steps[
+## Make data and code availiable
+## Make documentation
+## So, other people reproduce your work
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# SAME DATA + SAME CODE 
+# = 
+# SAME OUTPUT
+]
+
+---
+
+class: middle, center
+
+# Approaches and tools for R programming
+
+.flex-container[
+.half[
+![](http://rgaiacs.com/images/2017-09-11-rum-presentation-alice-and-bob-r.svg)
+].half[
+![](https://www.rstudio.com/wp-content/uploads/2015/01/Untitled.001.jpeg)
+].half[
+![](http://www.escrowlondon.co.uk/wp-content/uploads/supported-platforms-600x400.jpg)
+]
+].flex-container[
+.half[
+![](https://www.exactabacus.com/uploads/2014/11/versioncontrol-logos.jpg)
+].half[
+![](http://bioconductor.org/images/logo/jpg/bioconductor_logo_rgb.jpg)
+]
+]
+
+---
+class: inverse, middle, center
+
+# Dynamic Document
+
+---
+class: middle
+
+.left-column[
+## Literate Programming
+### Knitr, Rmarkdown
+.flex-container[
+  .half[
+    ![](https://www.rstudio.com/wp-content/uploads/2014/04/rmarkdown.png)
+  ].half[
+    ![](https://www.rstudio.com/wp-content/uploads/2014/04/knitr-200x232.png)
+  ]
+]
+].right-column[
+&lt;img src="conversion.png" width="50%" /&gt;
+
+## Some Extensions
+.flex-container[
+.half-top[
+### Presentations .small[([revealjs](https://mathatistics.github.io/nsm-17/#/title), [remarkjs](https://therimalaya.github.io/stat210-repetition/Day1#1))]
+].half-top[
+### Articles .small[([rticles](https://github.com/rstudio/rticles))]
+].half-top[
+### Books .small[([bookdown](http://stat210.netlify.com))]
+].half-top[
+### Websites .small[([blogdown](http://mathatistics.com))]
+]
+]
+]
+
+---
+class: middle
+
+.left-column[
+## Shiny
+.flex-container[
+![](https://www.rstudio.com/wp-content/uploads/2014/04/shiny.png)
+]
+].right-column[
+![](shiny-showcase.png)
+.flex-container[
+.left[
+&gt; ### Dynamic Application
+
+&gt; ### Dashboard
+]
+]
+]
+
+---
+class: inverse, middle, center
+
+# Version Control
+
+---
+class: middle
+
+.left-column[
+## Git
+### Github
+### Bitbucket
+![](https://git-scm.com/images/logos/downloads/Git-Logo-2Color.png)
+.flex-container[
+.half[
+![](https://assets-cdn.github.com/images/modules/logos_page/Octocat.png)
+].half[
+![](https://discoverequip.com/wp-content/uploads/2016/12/bitbucket_bug_blue-01.png)
+]
+]
+].right-column[
+&lt;img src="https://www.git-tower.com/learn/content/01-git/01-ebook/en/01-command-line/04-remote-repositories/01-introduction/basic-remote-workflow.png" width="75%" /&gt;
+
+.code[.right[.small[source: https://www.git-tower.com]]]
+
+.left[
+.tidy[
+- Solution to mess of copies of same document
+- Working in a team (collaboration)
+- Better organization
+]
+]
+]
+
+---
+
+# Workflow
+
+![](DataScienceWorkflow.png)
+
+.tidy[
+- Version control comes in every steps
+- Document and track all the steps you follow
+- Pipeline the workflow from raw data to final product
+]
+
+---
+
+class: inverse, middle, center
+
+.huge[
+# Thank You
+]
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "4:3",
+"countIncrementalSlides": false,
+"highlightLines": true,
+"highlightStyle": "github"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {window.dispatchEvent(new Event('resize'));});
+(function() {var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler"); if (!r) return; s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }"; d.head.appendChild(s);})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
